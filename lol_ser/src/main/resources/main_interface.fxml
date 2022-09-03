@@ -1,0 +1,52 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<AnchorPane fx:controller="lolSer.Controller.Controller"
+            xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color: #13181B;-fx-border-color: #C28F2C;-fx-border-width: 1"
+            stylesheets="css/styles.css"
+>
+    <VBox spacing="10" AnchorPane.rightAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER">
+        <HBox fx:id="top_bar" alignment="CENTER_RIGHT" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+            <Label fx:id="minimum" scaleY="0.6" scaleX="0.6" HBox.hgrow="ALWAYS" />
+            <Label fx:id="close" scaleY="0.6" scaleX="0.6"/>
+        </HBox>
+        <StackPane>
+            <Label fx:id="logoBackground" VBox.vgrow="ALWAYS" alignment="CENTER"/>
+            <Label fx:id="logo" text="LolSer" VBox.vgrow="ALWAYS" alignment="CENTER"/>
+        </StackPane>
+        <Label fx:id="title" text="사용자 이름을 입력하세요." alignment="CENTER"/>
+        <HBox fx:id="startInfo" visible="false" managed="false" spacing="10">
+            <VBox alignment="CENTER_RIGHT">
+                <Label fx:id="nameLabel" text="소환사"/>
+                <Label fx:id="tierLabel" text="티어" />
+            </VBox>
+            <Line fx:id="line"/>
+            <VBox>
+                <Label fx:id="name" alignment="CENTER"/>
+                <Label fx:id="tier" alignment="CENTER"/>
+            </VBox>
+        </HBox>
+
+        <Button fx:id="cancel" text="취소" visible="false" managed="false"/>
+        <StackPane fx:id="searchBar" maxWidth="350" prefHeight="55" minHeight="55">
+            <Label fx:id="lsLogo" text="LS" StackPane.alignment="CENTER_LEFT">
+                <StackPane.margin>
+                    <Insets left="12"/>
+                </StackPane.margin>
+            </Label>
+            <TextField fx:id="gameName" prefHeight="55" minHeight="55" onKeyPressed="#onEnter">
+                <StackPane.margin>
+                    <Insets left="50"/>
+                </StackPane.margin>
+            </TextField>
+            <Button fx:id="getAccount" text="검색" prefHeight="25" onAction="#getAccount" StackPane.alignment="CENTER_RIGHT">
+                <StackPane.margin>
+                    <Insets right="3"/>
+                </StackPane.margin>
+            </Button>
+        </StackPane>
+    </VBox>
+
+</AnchorPane>

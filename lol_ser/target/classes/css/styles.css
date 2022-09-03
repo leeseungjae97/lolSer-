@@ -1,0 +1,90 @@
+#top_bar {
+    -fx-background-color: #C28F2C;
+}
+#logo {
+    -fx-text-fill: #C28F2C;
+    -fx-font-family: 'IBM Plex Sans KR Bold';
+    -fx-font-size: 40pt;
+    -fx-padding: 50;
+}
+#lsLogo {
+    -fx-text-fill: #C28F2C;
+    -fx-font-family: 'IBM Plex Sans KR';
+    -fx-font-size: 20pt;
+}
+#gameName {
+    -fx-font-size: 15pt;
+    -fx-font-family: 'IBM Plex Sans KR';
+    -fx-background-radius: 0 5 5 0;
+    -fx-border-color: #C28F2C;
+    -fx-border-radius: 0 5 5 0;
+    -fx-border-width: 1.5;
+    -fx-faint-focus-color: #FFFFFF00;
+}
+#getAccount {
+    -fx-border-color: #C28F2C;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 5px;
+    -fx-background-color: #13181B;
+    -fx-background-radius: 5px;
+    -fx-font-size: 20pt;
+    -fx-text-fill: #C28F2C;
+    -fx-font-family: 'IBM Plex Sans KR';
+    -fx-padding: 2;
+}
+#title {
+    -fx-text-fill: #C28F2C;
+    -fx-font-family: 'IBM Plex Sans KR';
+    -fx-font-size: 20pt
+}
+#searchBar {
+    -fx-border-color: #C28F2C;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 5px;
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+}
+#cancel {
+    -fx-border-color: #C28F2C;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 5px;
+    -fx-background-color: #13181B;
+    -fx-background-radius: 5px;
+    -fx-font-size: 20pt;
+    -fx-text-fill: #C28F2C;
+    -fx-font-family: 'IBM Plex Sans KR';
+    -fx-padding: 5;
+}
+#nameLabel {
+    -fx-font-size: 20pt;
+    -fx-text-fill: white;
+    -fx-font-family: 'IBM Plex Sans KR';
+}
+#name {
+    -fx-font-size: 20pt;
+    -fx-text-fill: white;
+    -fx-font-family: 'IBM Plex Sans KR';
+}
+#tierLabel {
+    -fx-font-size: 20pt;
+    -fx-text-fill: white;
+    -fx-font-family: 'IBM Plex Sans KR';
+}
+#tier {
+    -fx-font-size: 20pt;
+    -fx-text-fill: white;
+    -fx-font-family: 'IBM Plex Sans KR';
+}
+#startInfo {
+    -fx-border-color: #C28F2C;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 5px;
+    -fx-padding: 10 0 10 20;
+    -fx-background-color: #13181B;
+    -fx-background-radius: 5px;
+}
+#line {
+    -fx-background-color: #C28F2C;
+    -fx-pref-width: 5;
+    -fx-pref-height: 30;
+}

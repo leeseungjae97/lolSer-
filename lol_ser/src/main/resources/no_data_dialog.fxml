@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="dialog_base"
+            style="-fx-border-color: #C28F2C;-fx-border-width: 1;-fx-background-color: #13181B"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="lolSer.Dialog.NoDataDialog"
+            prefHeight="300.0" prefWidth="300.0">
+    <VBox AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.leftAnchor="0" maxHeight="Infinity">
+        <HBox fx:id="top_bar" maxWidth="Infinity" spacing="15" alignment="TOP_RIGHT" style="-fx-background-color: #C28F2C">
+            <padding>
+                <Insets top="10" bottom="10" right="10"/>
+            </padding>
+        </HBox>
+        <HBox>
+            <Label fx:id="dialog_content" style="-fx-font-size: 12pt; -fx-text-fill: white;-fx-font-family: 'IBM Plex Sans KR'"
+                   VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity" alignment="BASELINE_CENTER" textAlignment="CENTER">
+                <padding>
+                    <Insets top="30"/>
+                </padding>
+            </Label>
+        </HBox>
+    </VBox>
+    <HBox AnchorPane.rightAnchor="5" AnchorPane.leftAnchor="5" AnchorPane.bottomAnchor="5" spacing="10">
+        <Button fx:id="okay" text="확인" maxWidth="Infinity" alignment="BOTTOM_CENTER" HBox.hgrow="ALWAYS"
+                style="-fx-font-family: 'IBM Plex Sans KR';-fx-background-radius: 5px; -fx-background-color: #C28F2C; -fx-font-size: 15pt; -fx-text-fill: white"/>
+    </HBox>
+</AnchorPane>
